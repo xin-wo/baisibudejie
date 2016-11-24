@@ -6,8 +6,10 @@
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BDJMenuViewController.h"
 
-@interface EssenceViewController : BaseViewController
+@interface EssenceViewController : BDJMenuViewController
+
+
 
 @end

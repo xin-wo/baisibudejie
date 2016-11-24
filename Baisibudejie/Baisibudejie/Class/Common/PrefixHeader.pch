@@ -20,12 +20,14 @@
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <ProgressHUD/ProgressHUD.h>
+
 
 //自己写的头文件
 #import "BDJConst.h"
 #import "UIButton+Util.h"
 #import "UIView+Util.h"
-
+#import "BDJDownloader.h"
 
 #endif
 

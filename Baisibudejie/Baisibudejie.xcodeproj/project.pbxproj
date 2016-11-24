@@ -237,6 +237,13 @@
 		BC1BE8C31DE2FAD600073BB1 /* tabBar_publish_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1BE7E61DE2FAD500073BB1 /* tabBar_publish_icon.png */; };
 		BC1BE8C41DE2FAD600073BB1 /* tabBar_publish_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1BE7E71DE2FAD500073BB1 /* tabBar_publish_icon@2x.png */; };
 		BC1BE8C51DE2FAD600073BB1 /* tabBar_publish_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC1BE7E81DE2FAD500073BB1 /* tabBar_publish_icon@3x.png */; };
+		BC40FFB11DE418DF00E373E7 /* BDJDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BC40FFB01DE418DF00E373E7 /* BDJDownloader.m */; };
+		BC40FFB41DE41F4B00E373E7 /* BDJEssenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC40FFB31DE41F4B00E373E7 /* BDJEssenceModel.m */; };
+		BC985E561DE5B647000EAA4E /* EssenceVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC985E541DE5B647000EAA4E /* EssenceVideoCell.m */; };
+		BC985E571DE5B647000EAA4E /* EssenceVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC985E551DE5B647000EAA4E /* EssenceVideoCell.xib */; };
+		BC985E5A1DE5CFD3000EAA4E /* BDJMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC985E591DE5CFD3000EAA4E /* BDJMenuViewController.m */; };
+		BC985E5D1DE5D078000EAA4E /* BDJMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BC985E5C1DE5D078000EAA4E /* BDJMenu.m */; };
+		BC985E601DE5D193000EAA4E /* BDJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC985E5F1DE5D193000EAA4E /* BDJTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -508,6 +515,20 @@
 		BC1BE7E61DE2FAD500073BB1 /* tabBar_publish_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabBar_publish_icon.png; sourceTree = "<group>"; };
 		BC1BE7E71DE2FAD500073BB1 /* tabBar_publish_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@2x.png"; sourceTree = "<group>"; };
 		BC1BE7E81DE2FAD500073BB1 /* tabBar_publish_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_publish_icon@3x.png"; sourceTree = "<group>"; };
+		BC40FFAE1DE418C100E373E7 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		BC40FFAF1DE418DF00E373E7 /* BDJDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJDownloader.h; sourceTree = "<group>"; };
+		BC40FFB01DE418DF00E373E7 /* BDJDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJDownloader.m; sourceTree = "<group>"; };
+		BC40FFB21DE41F4B00E373E7 /* BDJEssenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJEssenceModel.h; sourceTree = "<group>"; };
+		BC40FFB31DE41F4B00E373E7 /* BDJEssenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJEssenceModel.m; sourceTree = "<group>"; };
+		BC985E531DE5B647000EAA4E /* EssenceVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceVideoCell.h; sourceTree = "<group>"; };
+		BC985E541DE5B647000EAA4E /* EssenceVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceVideoCell.m; sourceTree = "<group>"; };
+		BC985E551DE5B647000EAA4E /* EssenceVideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EssenceVideoCell.xib; sourceTree = "<group>"; };
+		BC985E581DE5CFD3000EAA4E /* BDJMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJMenuViewController.h; sourceTree = "<group>"; };
+		BC985E591DE5CFD3000EAA4E /* BDJMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJMenuViewController.m; sourceTree = "<group>"; };
+		BC985E5B1DE5D078000EAA4E /* BDJMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJMenu.h; sourceTree = "<group>"; };
+		BC985E5C1DE5D078000EAA4E /* BDJMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJMenu.m; sourceTree = "<group>"; };
+		BC985E5E1DE5D193000EAA4E /* BDJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDJTableViewController.h; sourceTree = "<group>"; };
+		BC985E5F1DE5D193000EAA4E /* BDJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDJTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -624,10 +645,10 @@
 			children = (
 				BC1BE6EC1DE2FAD500073BB1 /* category */,
 				BC1BE6F11DE2FAD500073BB1 /* Common */,
-				BC1BE6E21DE2FAD500073BB1 /* Add */,
-				BC1BE6E61DE2FAD500073BB1 /* Attention */,
 				BC1BE6FA1DE2FAD500073BB1 /* Essence */,
 				BC1BE7001DE2FAD500073BB1 /* News */,
+				BC1BE6E21DE2FAD500073BB1 /* Add */,
+				BC1BE6E61DE2FAD500073BB1 /* Attention */,
 				BC1BE7061DE2FAD500073BB1 /* Profile */,
 			);
 			path = Class;
@@ -711,6 +732,7 @@
 		BC1BE6F11DE2FAD500073BB1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BC40FFAE1DE418C100E373E7 /* Const.h */,
 				BC1BE6F21DE2FAD500073BB1 /* BaseViewController.h */,
 				BC1BE6F31DE2FAD500073BB1 /* BaseViewController.m */,
 				BC1BE6F41DE2FAD500073BB1 /* BDJConst.h */,
@@ -718,6 +740,8 @@
 				BC1BE6F61DE2FAD500073BB1 /* BDJTabBar.m */,
 				BC1BE6F71DE2FAD500073BB1 /* BudejieTabBarViewController.h */,
 				BC1BE6F81DE2FAD500073BB1 /* BudejieTabBarViewController.m */,
+				BC40FFAF1DE418DF00E373E7 /* BDJDownloader.h */,
+				BC40FFB01DE418DF00E373E7 /* BDJDownloader.m */,
 				BC1BE6F91DE2FAD500073BB1 /* PrefixHeader.pch */,
 			);
 			path = Common;
@@ -738,6 +762,10 @@
 			children = (
 				BC1BE6FC1DE2FAD500073BB1 /* EssenceViewController.h */,
 				BC1BE6FD1DE2FAD500073BB1 /* EssenceViewController.m */,
+				BC985E581DE5CFD3000EAA4E /* BDJMenuViewController.h */,
+				BC985E591DE5CFD3000EAA4E /* BDJMenuViewController.m */,
+				BC985E5E1DE5D193000EAA4E /* BDJTableViewController.h */,
+				BC985E5F1DE5D193000EAA4E /* BDJTableViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -745,6 +773,10 @@
 		BC1BE6FE1DE2FAD500073BB1 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				BC40FFB21DE41F4B00E373E7 /* BDJEssenceModel.h */,
+				BC40FFB31DE41F4B00E373E7 /* BDJEssenceModel.m */,
+				BC985E5B1DE5D078000EAA4E /* BDJMenu.h */,
+				BC985E5C1DE5D078000EAA4E /* BDJMenu.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -752,6 +784,9 @@
 		BC1BE6FF1DE2FAD500073BB1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BC985E531DE5B647000EAA4E /* EssenceVideoCell.h */,
+				BC985E541DE5B647000EAA4E /* EssenceVideoCell.m */,
+				BC985E551DE5B647000EAA4E /* EssenceVideoCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1309,6 +1344,7 @@
 				BC1BE8141DE2FAD500073BB1 /* defaultUserIcon.png in Resources */,
 				BC1BE8B41DE2FAD600073BB1 /* tabBar_me_click_icon.png in Resources */,
 				BC1BE8B61DE2FAD600073BB1 /* tabBar_me_click_icon@3x.png in Resources */,
+				BC985E571DE5B647000EAA4E /* EssenceVideoCell.xib in Resources */,
 				BC1BE7F31DE2FAD500073BB1 /* AppIcon29x29@2x.png in Resources */,
 				BC1BE8291DE2FAD500073BB1 /* mainCellShare@2x.png in Resources */,
 				BC1BE89D1DE2FAD500073BB1 /* pushguidebot.png in Resources */,
@@ -1504,12 +1540,18 @@
 				BC1BE7EF1DE2FAD500073BB1 /* EssenceViewController.m in Sources */,
 				BC1BE7E91DE2FAD500073BB1 /* AttentionViewController.m in Sources */,
 				BC1BE7F01DE2FAD500073BB1 /* NewsViewController.m in Sources */,
+				BC985E5A1DE5CFD3000EAA4E /* BDJMenuViewController.m in Sources */,
 				BC1BE6B31DE2F99900073BB1 /* AppDelegate.m in Sources */,
 				BC1BE6B01DE2F99900073BB1 /* main.m in Sources */,
 				BC1BE7EE1DE2FAD500073BB1 /* BudejieTabBarViewController.m in Sources */,
+				BC985E5D1DE5D078000EAA4E /* BDJMenu.m in Sources */,
 				BC1BE7EC1DE2FAD500073BB1 /* BaseViewController.m in Sources */,
+				BC985E601DE5D193000EAA4E /* BDJTableViewController.m in Sources */,
+				BC40FFB11DE418DF00E373E7 /* BDJDownloader.m in Sources */,
 				BC1BE7F11DE2FAD500073BB1 /* ProfileViewController.m in Sources */,
 				BC1BE7EA1DE2FAD500073BB1 /* UIButton+Util.m in Sources */,
+				BC985E561DE5B647000EAA4E /* EssenceVideoCell.m in Sources */,
+				BC40FFB41DE41F4B00E373E7 /* BDJEssenceModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

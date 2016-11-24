@@ -8,6 +8,8 @@
 
 #import "BudejieTabBarViewController.h"
 #import "BDJTabBar.h"
+#import "EssenceViewController.h"
+#import "BDJMenu.h"
 
 @interface BudejieTabBarViewController ()
 
@@ -26,7 +28,72 @@
     //使用自定制的TabBar
     [self setValue:[[BDJTabBar alloc] init] forKey:@"tabBar"];
     
+    //获取菜单数据
+    [self loadMenuData];
 }
+
+- (void)loadMenuData {
+    NSString *filePath = [self menuFilePath];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        //读文件
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        
+        BDJMenu *menu = [[BDJMenu alloc] initWithData:data error:nil];
+        
+        //显示
+        [self showAllMenuData:menu];
+    }
+    
+    
+    //更新菜单数据
+    [self downloadMenuData];
+}
+
+
+//显示菜单数据
+- (void)showAllMenuData:(BDJMenu *)menu {
+    //设置精华的菜单数据
+    UINavigationController *essenceNavCtrl = [self.viewControllers firstObject];
+    EssenceViewController *essenceCtrl = [essenceNavCtrl.viewControllers firstObject];
+    essenceCtrl.subMenus = [[menu.menus firstObject] submenus];
+    
+}
+
+//下载菜单数据
+- (void)downloadMenuData {
+    
+    //http://s.budejie.com/public/list-appbar/bs0315-iphone-4.3/
+    
+    [BDJDownloader downloadWithURLString:@"http://s.budejie.com/public/list-appbar/bs0315-iphone-4.3/" success:^(NSData *data) {
+        
+        //解析
+        BDJMenu *menu = [[BDJMenu alloc] initWithData:data error:nil];
+        
+        NSString *path = [self menuFilePath];
+        
+        //如果plist文件不存在，显示菜单数据
+        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            [self showAllMenuData:menu];
+        }
+        
+        //存到本地
+        [data writeToFile:path atomically:YES];
+        
+        
+    } fail:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
+    
+    
+}
+
+
+- (NSString *)menuFilePath {
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask , YES) lastObject];
+    return [docPath stringByAppendingPathComponent:@"menu.plist"];
+}
+
+
 //创建视图控制器
 - (void)createViewControllers {
     //精华
@@ -60,6 +127,8 @@
     
     
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
