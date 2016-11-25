@@ -6,8 +6,8 @@
 //  Copyright © 2016年 王鑫. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BDJMenuViewController.h"
 
-@interface NewsViewController : BaseViewController
+@interface NewsViewController : BDJMenuViewController
 
 @end

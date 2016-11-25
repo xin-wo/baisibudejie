@@ -62,7 +62,16 @@
 
 @end
 
+@implementation BDJEssenceImage
 
 
+
+@end
+
+@implementation BDJEssenceAudio
+
+
+
+@end
 
 

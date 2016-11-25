@@ -9,6 +9,7 @@
 #import "EssenceViewController.h"
 
 
+
 @interface EssenceViewController ()
 
 
@@ -18,8 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    self.rightImageName = @"navigationButtonRandom_26x26_";
+    self.rightHLImageName = @"navigationButtonRandomClickN_26x26_";
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -31,16 +36,5 @@
 
 
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

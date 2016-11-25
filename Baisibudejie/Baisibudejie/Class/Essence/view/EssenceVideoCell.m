@@ -115,7 +115,7 @@
     NSMutableString *tagString = [NSMutableString string];
     for (NSInteger i = 0; i<detailModel.tags.count; i++) {
         BDJEssenceTag *tag = detailModel.tags[i];
-        [tagString appendFormat:@"%@", tag.name];
+        [tagString appendFormat:@"%@ ", tag.name];
     }
     self.tagLabel.text = tagString;
     

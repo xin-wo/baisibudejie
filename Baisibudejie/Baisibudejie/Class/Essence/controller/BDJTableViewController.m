@@ -9,7 +9,9 @@
 #import "BDJTableViewController.h"
 #import "BDJEssenceModel.h"
 #import "EssenceVideoCell.h"
-
+#import "EssenceImageCell.h"
+#import "EssenceTextCell.h"
+#import "EssenceAudioCell.h"
 
 @interface BDJTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -125,7 +127,7 @@
         
         
     } fail:^(NSError *error) {
-        NSLog(@"%@", error);
+       [ProgressHUD showError:@"下载失败"];
     }];
 }
 
@@ -145,7 +147,16 @@
     if ([detail.type isEqualToString:@"video"]) {
         //视频的cell
         cell = [EssenceVideoCell videoCellForTableView:tableView atIndexPath:indexPath withModel:detail];
-    }else{
+    } else if ([detail.type isEqualToString:@"image"]) {
+        //图片的cell
+        cell = [EssenceImageCell imageCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    } else if ([detail.type isEqualToString:@"text"]) {
+        //段子的cell
+        cell = [EssenceTextCell textCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    } else if ([detail.type isEqualToString:@"audio"]) {
+        //音频的cell
+        cell = [EssenceAudioCell audioCellForTableView:tableView atIndexPath:indexPath withModel:detail];
+    } else {
         cell = [[UITableViewCell alloc] init];
     }
     

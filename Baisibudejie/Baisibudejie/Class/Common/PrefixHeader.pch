@@ -28,6 +28,7 @@
 #import "UIButton+Util.h"
 #import "UIView+Util.h"
 #import "BDJDownloader.h"
+#import "UILabel+Util.h"
 
 #endif
 

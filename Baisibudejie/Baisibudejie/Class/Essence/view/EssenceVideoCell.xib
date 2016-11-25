@@ -17,6 +17,12 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxY-8r-Ydl" userLabel="bgView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-IS-T2M" userLabel="videoImageView">
+                                <rect key="frame" x="10" y="79" width="355" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="TRg-SI-wBs"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iWs-28-9s0" userLabel="userImageView">
                                 <rect key="frame" x="10" y="8" width="30" height="30"/>
                                 <constraints>
@@ -55,7 +61,7 @@
                                     <action selector="ClickMoreBtn" destination="KGk-i7-Jjw" eventType="touchUpInside" id="okI-Xp-6dj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urn-fU-e3K" userLabel="descLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urn-fU-e3K" userLabel="descLabel">
                                 <rect key="frame" x="10" y="48" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +70,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUM-Ji-8ou" userLabel="commentView">
                                 <rect key="frame" x="10" y="209" width="355" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE0-H9-uez" userLabel="commentLabel">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE0-H9-uez" userLabel="commentLabel">
                                         <rect key="frame" x="10" y="10" width="335" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -184,19 +190,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-IS-T2M" userLabel="videoImageView">
-                                <rect key="frame" x="10" y="79" width="355" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="TRg-SI-wBs"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umv-cB-Uxz">
                                 <rect key="frame" x="158" y="109" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="URl-ON-cDS"/>
                                     <constraint firstAttribute="height" constant="60" id="UiM-6D-7Tj"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="video-play.png"/>
+                                <state key="normal" backgroundImage="play-A.png"/>
                                 <connections>
                                     <action selector="playAction" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YZs-ze-tSv"/>
                                 </connections>
@@ -285,7 +285,7 @@
         <image name="mainCellDingClick.png" width="20" height="20"/>
         <image name="mainCellShare.png" width="20" height="20"/>
         <image name="mainCellShareClick.png" width="23" height="23"/>
+        <image name="play-A.png" width="50" height="50"/>
         <image name="tagicon.png" width="15" height="15"/>
-        <image name="video-play.png" width="71" height="71"/>
     </resources>
 </document>

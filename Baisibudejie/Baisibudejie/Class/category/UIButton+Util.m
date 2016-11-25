@@ -21,7 +21,7 @@
         
     }
     if (highlightBgImageName) {
-        [btn setBackgroundImage:[UIImage imageNamed:highlightBgImageName] forState:UIControlStateSelected];
+        [btn setBackgroundImage:[UIImage imageNamed:highlightBgImageName] forState:UIControlStateHighlighted];
     }
     if (target && action) {
         [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
