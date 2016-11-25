@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Baisibudejie' do
+    pod 'AFNetworking'
+    pod 'SDWebImage'
+    pod 'Masonry'
+    pod 'JSONModel'
+    pod 'MJRefresh'
+    pod 'ProgressHUD'
+end
+
